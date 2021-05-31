@@ -427,7 +427,7 @@ body{
 
 
 /* events */
-.owl-prev, .owl-next {
+/* .owl-prev, .owl-next {
   width: 1rem;
   height: 5rem;
   border: none;
@@ -444,10 +444,49 @@ body{
     .owl-prev { left: -15px; }
     .owl-next { right: -15px; }
     .owl-next:hover .owl-prev:hover{
-      /* background: transparent; */
       background-color: #45d328;
     }
-    .owl-prev i, .owl-next i {transform : scale(2,5); background: transparent; color: #000;  border-color: #28a745;}
+    .owl-prev i, .owl-next i {transform : scale(2,5); background: transparent; color: #000;  border-color: #28a745;} */
+@media only screen and (min-width: 600px) {
+      .owl-prev, .owl-next {
+        width: 2rem;
+        height: 6rem;
+        padding: 10px;
+        margin:10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block !important;
+        border: solid;
+      }
+      .owl-prev:visited{
+          border: none !important;
+      }
+      .owl-prev { left: -50px; }
+      .owl-next { right: -50px; }
+      .owl-prev i, .owl-next i {transform : scale(2,5); color: black;}
+      }
+      
+      @media only screen and (max-width: 600px) {
+        .owl-prev, .owl-next {
+          width: 2rem;
+          height: 6rem;
+          padding: 10px;
+          margin:10px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          display: block !important;
+          border: solid;
+        }
+        .owl-prev:visited{
+            border: none !important;
+        }
+        .owl-prev { left: -50px; }
+        .owl-next { right: -50px; }
+        .owl-prev i, .owl-next i {transform : scale(2,5); color: black;}
+      
+      }
 #events {
 
     background: url("https://jaxa.netlify.com/home-1/img/bg/feature-bg.png") top center no-repeat;
