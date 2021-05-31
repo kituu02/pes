@@ -482,8 +482,8 @@ body{
         .owl-prev:visited{
             border: none !important;
         }
-        .owl-prev { left: -50px; }
-        .owl-next { right: -50px; }
+        .owl-prev { left: -10px; }
+        .owl-next { right: -10px; }
         .owl-prev i, .owl-next i {transform : scale(2,5); color: black;}
       
       }
